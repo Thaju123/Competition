@@ -23,8 +23,8 @@
     "category": "General",
     "name": "Azkar",
     "status": "pending",
-    "image": "images/boys_general_azkar.jpg",
-    "result": ""
+    "image": "../images/burda.png",
+    "result": "../images/burda.png"
   },
   {
     "id": "4",
@@ -32,8 +32,8 @@
     "category": "General",
     "name": "Ablution",
     "status": "pending",
-    "image": "images/boys_general_ablution.jpg",
-    "result": ""
+    "image": "../images/burda.png",
+    "result":"../images/burda.png"
   },
   {
     "id": "5",
