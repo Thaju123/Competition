@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@600;700&display=swap');
+
+/* ===== RESET & BASE ===== */
 * {
   margin: 0;
   padding: 0;
@@ -6,19 +8,23 @@
 }
 body {
   font-family: 'Lato', Arial, sans-serif;
-  background: #121c2f;
+background: url("/images/1.jpg");
   color: #e0eaff;
   min-height: 100vh;
   padding: 20px;
 }
+
+/* ===== RESULTS LAYOUT ===== */
 .results-container {
   max-width: 1200px;
   margin: 40px auto;
   padding: 24px;
-  background: rgba(24, 30, 54, 0.85);
+background: url("/images/1.jpg");
   border-radius: 16px;
   box-shadow: 0 4px 18px rgba(0,0,0,0.18);
 }
+
+/* ===== GROUP HEADER (Boys/Girls) ===== */
 .group-header {
   font-family: 'Montserrat', sans-serif;
   font-size: 2rem;
@@ -29,6 +35,8 @@ body {
   letter-spacing: 2px;
   font-weight: 700;
 }
+
+/* ===== CATEGORY HEADER ===== */
 .category-header {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.25rem;
@@ -38,12 +46,16 @@ body {
   letter-spacing: 1px;
   font-weight: 600;
 }
+
+/* ===== COMPETITION GRID ===== */
 .competition-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 24px;
   margin-bottom: 32px;
 }
+
+/* ===== COMPETITION CARD ===== */
 .competition-card {
   background: rgba(124,255,233,0.08);
   border: 1.5px solid #77cdff52;
@@ -56,11 +68,15 @@ body {
   flex-direction: column;
   align-items: center;
 }
+
+/* ===== CARD HOVER ===== */
 .competition-card:hover {
   background: rgba(124,255,233,0.19);
   box-shadow: 0 8px 24px #77cdff30;
   transform: translateY(-4px) scale(1.03);
 }
+
+/* ===== COMPETITION IMAGE ===== */
 .competition-card img {
   width: 100%;
   max-width: 160px;
@@ -71,6 +87,8 @@ body {
   box-shadow: 0 0px 10px #2980b97a;
   background: #19547b55;
 }
+
+/* ===== COMPETITION NAME ===== */
 .competition-card .comp-name {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.08rem;
@@ -79,6 +97,8 @@ body {
   margin-bottom: 6px;
   letter-spacing: 1px;
 }
+
+/* ===== BUTTONS ===== */
 .competition-card button {
   background: linear-gradient(90deg, #42a6df, #76c3e4 80%);
   color: #101e3c;
@@ -93,16 +113,20 @@ body {
   transition: background 0.3s ease;
   margin-top: 5px;
 }
+
 .competition-card button:hover:enabled {
   background: linear-gradient(90deg, #2990d6, #4aaddb 80%);
   color: #fff;
 }
+
 .competition-card button:disabled {
   background: #888ba0;
   color: #eee;
   cursor: not-allowed;
   opacity: 0.8;
 }
+
+/* ===== RESPONSIVE FOR MOBILE ===== */
 @media (max-width: 700px) {
   .results-container {
     padding: 10px;
